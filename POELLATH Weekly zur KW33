@@ -56,17 +56,26 @@
 			text-align: center;
 			vertical-align: middle;
 		}
+		.category-label {
+			height: 135px;
+			margin: 0 auto;
+			position: relative;
+			width: 56px;
+		}
 		.rotate-text {
-			display: inline-block;
+			display: block;
+			left: 50%;
 			line-height: 22px;
+			position: absolute;
+			top: 50%;
 			white-space: nowrap;
-			transform: rotate(-90deg);
+			transform: translate(-50%, -50%) rotate(-90deg);
 			transform-origin: 50% 50%;
-			-ms-transform: rotate(-90deg);
+			-ms-transform: translate(-50%, -50%) rotate(-90deg);
 			-ms-transform-origin: 50% 50%;
-			-moz-transform: rotate(-90deg);
+			-moz-transform: translate(-50%, -50%) rotate(-90deg);
 			-moz-transform-origin: 50% 50%;
-			-webkit-transform: rotate(-90deg);
+			-webkit-transform: translate(-50%, -50%) rotate(-90deg);
 			-webkit-transform-origin: 50% 50%;
 		}
 
@@ -76,7 +85,7 @@
 				max-width: 100% !important;
 				height: auto !important;
 			}
-			.category-cell {
+			.category-cell, .category-label {
 				width: 44px !important;
 				min-width: 44px !important;
 			}
@@ -146,7 +155,7 @@
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:90; text-align:center; vertical-align:middle;">SPECIAL</td>
+									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:-90; text-align:center; vertical-align:middle;">SPECIAL</td>
 
 								</tr></table>
 
@@ -154,7 +163,7 @@
 
 								<!--[if !mso]><!-->
 
-								<span class="rotate-text" style="color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">SPECIAL</span>
+								<div class="category-label"><span class="rotate-text" style="color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">SPECIAL</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -216,7 +225,7 @@
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:90; text-align:center; vertical-align:middle;">UPDATES</td>
+									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:-90; text-align:center; vertical-align:middle;">UPDATES</td>
 
 								</tr></table>
 
@@ -224,7 +233,7 @@
 
 								<!--[if !mso]><!-->
 
-								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">UPDATES</span>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">UPDATES</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -360,7 +369,7 @@
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:90; text-align:center; vertical-align:middle;">RANKINGS</td>
+									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:-90; text-align:center; vertical-align:middle;">RANKINGS</td>
 
 								</tr></table>
 
@@ -368,7 +377,7 @@
 
 								<!--[if !mso]><!-->
 
-								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">RANKINGS</span>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">RANKINGS</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -467,7 +476,7 @@
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:90; text-align:center; vertical-align:middle;">DEALS</td>
+									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:-90; text-align:center; vertical-align:middle;">DEALS</td>
 
 								</tr></table>
 
@@ -475,7 +484,7 @@
 
 								<!--[if !mso]><!-->
 
-								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">DEALS</span>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">DEALS</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -537,7 +546,7 @@
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:90; text-align:center; vertical-align:middle;">EVENTS</td>
+									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:-90; text-align:center; vertical-align:middle;">EVENTS</td>
 
 								</tr></table>
 
@@ -545,7 +554,7 @@
 
 								<!--[if !mso]><!-->
 
-								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">EVENTS</span>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">EVENTS</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -607,7 +616,7 @@
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:90; text-align:center; vertical-align:middle;">PE&#8209;MAGAZIN</td>
+									<td width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; writing-mode:tb-rl; mso-rotate:-90; text-align:center; vertical-align:middle;">PE&#8209;MAGAZIN</td>
 
 								</tr></table>
 
@@ -615,7 +624,7 @@
 
 								<!--[if !mso]><!-->
 
-								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">PE&#8209;MAGAZIN</span>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">PE&#8209;MAGAZIN</span></div>
 
 								<!--<![endif]-->
 							</th>
