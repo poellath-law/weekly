@@ -143,7 +143,17 @@
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
 							<th class="category-cell" style="background-color: #417764; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="3">
+								<!--[if mso]>
+
+								<span style="color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; display:inline-block; writing-mode:tb-rl; mso-rotate:90; text-align:center;">SPECIAL</span>
+
+								<![endif]-->
+
+								<!--[if !mso]><!-->
+
 								<span class="rotate-text" style="color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">SPECIAL</span>
+
+								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width: 564px; line-height: 0px;">&nbsp;</th>
 							<th class="action-heading" style="width: 108px; line-height: 0px;">&nbsp;</th>
@@ -199,7 +209,17 @@
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="7">
+								<!--[if mso]>
+
+								<span style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; display:inline-block; writing-mode:tb-rl; mso-rotate:90; text-align:center;">UPDATES</span>
+
+								<![endif]-->
+
+								<!--[if !mso]><!-->
+
 								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">UPDATES</span>
+
+								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width: 564px; line-height: 0px;">&nbsp;</th>
 							<th class="action-heading" style="width: 108px; line-height: 0px;">&nbsp;</th>
@@ -329,7 +349,17 @@
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="5">
+								<!--[if mso]>
+
+								<span style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; display:inline-block; writing-mode:tb-rl; mso-rotate:90; text-align:center;">RANKINGS</span>
+
+								<![endif]-->
+
+								<!--[if !mso]><!-->
+
 								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">RANKINGS</span>
+
+								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width: 564px; line-height: 0px;">&nbsp;</th>
 							<th class="action-heading" style="width: 108px; line-height: 0px;">&nbsp;</th>
@@ -422,7 +452,17 @@
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="3">
+								<!--[if mso]>
+
+								<span style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; display:inline-block; writing-mode:tb-rl; mso-rotate:90; text-align:center;">DEALS</span>
+
+								<![endif]-->
+
+								<!--[if !mso]><!-->
+
 								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">DEALS</span>
+
+								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width: 564px; line-height: 0px;">&nbsp;</th>
 							<th class="action-heading" style="width: 108px; line-height: 0px;">&nbsp;</th>
@@ -478,7 +518,17 @@
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="3">
+								<!--[if mso]>
+
+								<span style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; display:inline-block; writing-mode:tb-rl; mso-rotate:90; text-align:center;">EVENTS</span>
+
+								<![endif]-->
+
+								<!--[if !mso]><!-->
+
 								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">EVENTS</span>
+
+								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width: 564px; line-height: 0px;">&nbsp;</th>
 							<th class="action-heading" style="width: 108px; line-height: 0px;">&nbsp;</th>
@@ -534,7 +584,17 @@
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center; border-bottom: 2px solid #f1f1f1;" width="56" rowspan="3">
+								<!--[if mso]>
+
+								<span style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px; display:inline-block; writing-mode:tb-rl; mso-rotate:90; text-align:center;">PE&#8209;MAGAZIN</span>
+
+								<![endif]-->
+
+								<!--[if !mso]><!-->
+
 								<span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">PE&#8209;MAGAZIN</span>
+
+								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width: 564px; line-height: 0px;">&nbsp;</th>
 							<th class="action-heading" style="width: 108px; line-height: 0px;">&nbsp;</th>
