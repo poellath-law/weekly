@@ -170,7 +170,7 @@
 
 									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#ffffff; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<nobr><b><font face="Arial, sans-serif" size="4" color="#ffffff" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">SPECIAL</font></b></nobr>
+										<nobr><b><font dir="ltr" face="Arial, sans-serif" size="4" color="#ffffff" style="font-size:13.5pt; font-weight:bold; white-space:nowrap; direction:ltr; unicode-bidi:embed;">SPECIAL</font></b></nobr>
 
 									</td>
 
@@ -244,7 +244,7 @@
 
 									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">UPDATES</font></b></nobr>
+										<nobr><b><font dir="ltr" face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap; direction:ltr; unicode-bidi:embed;">UPDATES</font></b></nobr>
 
 									</td>
 
@@ -392,7 +392,7 @@
 
 									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">RANKINGS</font></b></nobr>
+										<nobr><b><font dir="ltr" face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap; direction:ltr; unicode-bidi:embed;">RANKINGS</font></b></nobr>
 
 									</td>
 
@@ -503,7 +503,7 @@
 
 									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">DEALS</font></b></nobr>
+										<nobr><b><font dir="ltr" face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap; direction:ltr; unicode-bidi:embed;">DEALS</font></b></nobr>
 
 									</td>
 
@@ -577,7 +577,7 @@
 
 									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">EVENTS</font></b></nobr>
+										<nobr><b><font dir="ltr" face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap; direction:ltr; unicode-bidi:embed;">EVENTS</font></b></nobr>
 
 									</td>
 
@@ -651,7 +651,7 @@
 
 									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">PE&#8209;MAGAZIN</font></b></nobr>
+										<nobr><b><font dir="ltr" face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap; direction:ltr; unicode-bidi:embed;">PE&#8209;MAGAZIN</font></b></nobr>
 
 									</td>
 
