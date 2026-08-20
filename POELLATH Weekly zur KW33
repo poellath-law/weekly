@@ -104,16 +104,16 @@
 				padding-right: 10px !important;
 			}
 			.article-copy {
-				font-size: 19px !important;
-				line-height: 26px !important;
-			}
-			.article-title {
-				font-size: 23px !important;
+				font-size: 22px !important;
 				line-height: 30px !important;
 			}
+			.article-title {
+				font-size: 26px !important;
+				line-height: 34px !important;
+			}
 			.rotate-text {
-				font-size: 20px !important;
-				line-height: 24px !important;
+				font-size: 22px !important;
+				line-height: 27px !important;
 			}
 			.article-copy a, .article-copy a:link,
 			.article-copy a:visited, .article-copy .nounder {
