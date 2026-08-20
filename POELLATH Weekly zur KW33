@@ -68,6 +68,7 @@
 		}
 		.rotate-text {
 			display: block;
+			font-weight: bold;
 			left: 50%;
 			line-height: 22px;
 			position: absolute;
@@ -165,11 +166,11 @@
 							<th class="category-cell" style="background-color: #417764; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="3">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:270; margin-left:-40px; margin-right:-39px;">
+								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
 
 									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
 
-										<div style="color:#ffffff; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:56px; text-align:center; white-space:nowrap;">SPECIAL</div>
+										<div style="color:#ffffff; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">SPECIAL</div>
 
 									</v:textbox>
 
@@ -179,7 +180,7 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">SPECIAL</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">SPECIAL</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -239,11 +240,11 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="7">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:270; margin-left:-40px; margin-right:-39px;">
+								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
 
 									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:56px; text-align:center; white-space:nowrap;">UPDATES</div>
+										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">UPDATES</div>
 
 									</v:textbox>
 
@@ -253,7 +254,7 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">UPDATES</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">UPDATES</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -387,11 +388,11 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="5">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:270; margin-left:-40px; margin-right:-39px;">
+								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
 
 									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:56px; text-align:center; white-space:nowrap;">RANKINGS</div>
+										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">RANKINGS</div>
 
 									</v:textbox>
 
@@ -401,7 +402,7 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">RANKINGS</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">RANKINGS</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -498,11 +499,11 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="3">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:270; margin-left:-40px; margin-right:-39px;">
+								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
 
 									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:56px; text-align:center; white-space:nowrap;">DEALS</div>
+										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">DEALS</div>
 
 									</v:textbox>
 
@@ -512,7 +513,7 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">DEALS</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">DEALS</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -572,11 +573,11 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="3">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:270; margin-left:-40px; margin-right:-39px;">
+								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
 
 									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:56px; text-align:center; white-space:nowrap;">EVENTS</div>
+										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">EVENTS</div>
 
 									</v:textbox>
 
@@ -586,7 +587,7 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">EVENTS</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">EVENTS</span></div>
 
 								<!--<![endif]-->
 							</th>
@@ -646,11 +647,11 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center; border-bottom: 2px solid #f1f1f1;" width="56" rowspan="3">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:270; margin-left:-40px; margin-right:-39px;">
+								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
 
 									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; line-height:56px; text-align:center; white-space:nowrap;">PE&#8209;MAGAZIN</div>
+										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">PE&#8209;MAGAZIN</div>
 
 									</v:textbox>
 
@@ -660,7 +661,7 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;">PE&#8209;MAGAZIN</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">PE&#8209;MAGAZIN</span></div>
 
 								<!--<![endif]-->
 							</th>
