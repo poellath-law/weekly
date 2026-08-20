@@ -32,8 +32,12 @@
 			max-width: 100%;
 			-ms-interpolation-mode: bicubic;
 		}
-		a, a:link, a:visited {
-			color: inherit;
+		a, a:link, a:visited,
+		#MessageViewBody a,
+		body[data-outlook-cycle] a,
+		a[x-apple-data-detectors] {
+			border-bottom: 0 !important;
+			color: inherit !important;
 			text-decoration: none !important;
 			text-underline: none !important;
 		}
@@ -99,9 +103,23 @@
 				padding-left: 12px !important;
 				padding-right: 10px !important;
 			}
+			.article-copy {
+				font-size: 19px !important;
+				line-height: 26px !important;
+			}
 			.article-title {
-				font-size: 16px !important;
-				line-height: 22px !important;
+				font-size: 23px !important;
+				line-height: 30px !important;
+			}
+			.rotate-text {
+				font-size: 20px !important;
+				line-height: 24px !important;
+			}
+			.article-copy a, .article-copy a:link,
+			.article-copy a:visited, .article-copy .nounder {
+				border-bottom: 0 !important;
+				text-decoration: none !important;
+				text-underline: none !important;
 			}
 			.action-heading, .article-action {
 				width: 44px !important;
