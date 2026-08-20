@@ -166,15 +166,15 @@
 							<th class="category-cell" style="background-color: #417764; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="3">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
+									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#ffffff; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<div style="color:#ffffff; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">SPECIAL</div>
+										<nobr><b><font face="Arial, sans-serif" size="4" color="#ffffff" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">SPECIAL</font></b></nobr>
 
-									</v:textbox>
+									</td>
 
-								</v:rect>
+								</tr></table>
 
 								<![endif]-->
 
@@ -240,15 +240,15 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="7">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
+									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">UPDATES</div>
+										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">UPDATES</font></b></nobr>
 
-									</v:textbox>
+									</td>
 
-								</v:rect>
+								</tr></table>
 
 								<![endif]-->
 
@@ -388,15 +388,15 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="5">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
+									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">RANKINGS</div>
+										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">RANKINGS</font></b></nobr>
 
-									</v:textbox>
+									</td>
 
-								</v:rect>
+								</tr></table>
 
 								<![endif]-->
 
@@ -499,15 +499,15 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="3">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
+									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">DEALS</div>
+										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">DEALS</font></b></nobr>
 
-									</v:textbox>
+									</td>
 
-								</v:rect>
+								</tr></table>
 
 								<![endif]-->
 
@@ -573,15 +573,15 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center;" width="56" rowspan="3">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
+									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">EVENTS</div>
+										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">EVENTS</font></b></nobr>
 
-									</v:textbox>
+									</td>
 
-								</v:rect>
+								</tr></table>
 
 								<![endif]-->
 
@@ -647,15 +647,15 @@
 							<th class="category-cell" style="background-color: #f1f1f1; width: 56px; height: 135px !important; vertical-align: middle; text-align: center; border-bottom: 2px solid #f1f1f1;" width="56" rowspan="3">
 								<!--[if mso]>
 
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" filled="false" stroked="false" style="display:inline-block; width:135px; height:56px; rotation:-90; margin-left:-40px; margin-right:-39px;">
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
 
-									<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text:false;">
+									<td nowrap="nowrap" width="56" height="135" align="center" valign="middle" style="width:56px; height:135px; color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:13.5pt !important; font-weight:bold !important; line-height:18pt; mso-line-height-rule:exactly; mso-rotate:90; writing-mode:bt-rl; direction:rtl; unicode-bidi:bidi-override; text-align:center; vertical-align:middle; white-space:nowrap !important; word-break:keep-all;">
 
-										<div style="color:#434F69; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-size:13.5pt; font-weight:bold; line-height:56px; mso-line-height-rule:exactly; text-align:center; white-space:nowrap;">PE&#8209;MAGAZIN</div>
+										<nobr><b><font face="Arial, sans-serif" size="4" color="#434F69" style="font-size:13.5pt; font-weight:bold; white-space:nowrap;">PE&#8209;MAGAZIN</font></b></nobr>
 
-									</v:textbox>
+									</td>
 
-								</v:rect>
+								</tr></table>
 
 								<![endif]-->
 
