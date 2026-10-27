@@ -46,7 +46,12 @@
 		.ExternalClass font, .ExternalClass td, .ExternalClass th {
 			line-height: 100%;
 		}
-		.nodesk { display: none; }
+		.nodesk, .mobile-header {
+			display: none;
+			max-height: 0;
+			overflow: hidden;
+			mso-hide: all;
+		}
 		.nounder {
 			display: inline-block;
 			text-decoration: none !important;
@@ -93,6 +98,18 @@
 				width: 100% !important;
 				max-width: 100% !important;
 				height: auto !important;
+			}
+			.desktop-header {
+				display: none !important;
+				max-height: 0 !important;
+				overflow: hidden !important;
+			}
+			.mobile-header {
+				display: block !important;
+				height: auto !important;
+				max-height: none !important;
+				overflow: visible !important;
+				width: 100% !important;
 			}
 			.category-cell, .category-label {
 				width: 44px !important;
@@ -175,7 +192,8 @@
 					<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="740"><tr><td>
 					<![endif]-->
 					<table role="presentation" class="main-section" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; width:100%; max-width:740px;"><tr><td class="main-section" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;color:#333333;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;width:740px; max-width:740px; overflow-wrap:break-word; word-wrap:break-word;" width="740">
-					<img class="w100pc" alt="POELLATH Weekly, Kalenderwoche 33" src="https://www.pplaw.com/sites/default/files/2023-08/weekly-header-kw33.png" style="display:block; width:100%; max-width:740px; height:auto; -ms-interpolation-mode:bicubic;" width="740" height="143" border="0"/>
+					<img class="w100pc desktop-header" alt="POELLATH Weekly, Kalenderwoche 33" src="https://www.pplaw.com/sites/default/files/2023-08/weekly-header-kw33.png" style="display:block; width:100%; max-width:740px; height:auto; -ms-interpolation-mode:bicubic;" width="740" height="143" border="0"/>
+					<img class="w100pc mobile-header" alt="POELLATH Weekly, Kalenderwoche 33" src="https://www.pplaw.com/sites/default/files/2024-04/weekly-header-mobil-kw33.png" style="display:none; width:100%; max-width:740px; height:auto; max-height:0; overflow:hidden; mso-hide:all; -ms-interpolation-mode:bicubic;" width="740" height="143" border="0"/>
 					<table role="presentation" class="content-table" border="0" cellpadding="0" cellspacing="0" width="740" style="border-collapse:collapse; width:100%; max-width:740px; table-layout:fixed;">
 				
 						<!--Start category-->
