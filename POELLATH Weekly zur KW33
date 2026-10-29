@@ -50,7 +50,7 @@
 		.ExternalClass font, .ExternalClass td, .ExternalClass th {
 			line-height: 100%;
 		}
-		.nodesk {
+		.nodesk, .mobile-header {
 			display: none;
 			max-height: 0;
 			overflow: hidden;
