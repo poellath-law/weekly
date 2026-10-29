@@ -6,7 +6,7 @@
 
 	Made by Lynn Nguyen, Patrick Brockmann
 
-	Template-Version: 1.6.0
+	Template-Version: 1.2.1
 	Stand: 2026-10-29
 	Kompatibilitaetsziele: Outlook Desktop 2606, Outlook iOS 5.2631.0
 
@@ -116,13 +116,13 @@
 				width: 100% !important;
 			}
 			.category-cell, .category-label {
-				width: 44px !important;
-				min-width: 44px !important;
+				width: 40px !important;
+				min-width: 40px !important;
 			}
 			.copy-heading, .article-copy {
 				width: auto !important;
 				padding-left: 12px !important;
-				padding-right: 10px !important;
+				padding-right: 8px !important;
 			}
 			.article-copy {
 				font-size: 22px !important;
@@ -133,8 +133,8 @@
 				line-height: 34px !important;
 			}
 			.rotate-text {
-				font-size: 24px !important;
-				line-height: 29px !important;
+				font-size: 22px !important;
+				line-height: 27px !important;
 			}
 			.article-copy a, .article-copy a:link,
 			.article-copy a:visited, .article-copy .nounder {
@@ -143,8 +143,8 @@
 				text-underline: none !important;
 			}
 			.action-heading, .article-action {
-				width: 50px !important;
-				min-width: 50px !important;
+				width: 32px !important;
+				min-width: 32px !important;
 			}
 			.article-action a {
 				display: inline-block !important;
@@ -153,7 +153,7 @@
 				line-height: 44px !important;
 			}
 			.action-table {
-				width: 50px !important;
+				width: 32px !important;
 			}
 			.action-label {
 				display: none !important;
@@ -161,23 +161,17 @@
 				width: 0 !important;
 			}
 			.article-action img {
-				width: 38px !important;
-				height: 38px !important;
-				margin: 3px 0 !important;
+				margin: 9px 0 !important;
 			}
 			.gutter-cell {
-				width: 6px !important;
-				min-width: 6px !important;
+				width: 4px !important;
+				min-width: 4px !important;
 			}
 			.nomob { display: none !important; }
 			.nodesk { display: inline-block !important; }
 		}
 
-		/* Outlook iOS can report a desktop-like viewport width and would therefore
-		   trigger a width-only desktop query. Fine pointer + hover restrict this
-		   enhancement to actual desktop browsers; Outlook Desktop uses MSO markup. */
-		@media only screen and (min-width: 741px) and (hover: hover) and (pointer: fine) {
-			.main-section, .content-table, .responsive-header {max-width:740px !important;}
+		@media only screen and (min-width: 741px) {
 			.desktop-header {
 				display: block !important;
 				height: auto !important;
@@ -185,11 +179,9 @@
 				overflow: visible !important;
 			}
 			.mobile-header {
-				display: block !important;
-				height: auto !important;
-				max-height: none !important;
-				overflow: visible !important;
-				content: url("https://www.pplaw.com/sites/default/files/2023-08/weekly-header-kw33.png");
+				display: none !important;
+				max-height: 0 !important;
+				overflow: hidden !important;
 			}
 			.category-cell, .category-label {
 				width: 56px !important;
@@ -213,7 +205,6 @@
 				width: 108px !important;
 				min-width: 108px !important;
 			}
-			.article-action img {width:25px !important; height:25px !important;}
 			.action-label {
 				display: table-cell !important;
 				font-size: 12px !important;
@@ -250,14 +241,14 @@
 		}
 		body[data-outlook-cycle] .category-cell,
 		body[data-outlook-cycle] .category-label {
-			width: 44px !important;
-			min-width: 44px !important;
+			width: 40px !important;
+			min-width: 40px !important;
 		}
 		body[data-outlook-cycle] .copy-heading,
 		body[data-outlook-cycle] .article-copy {
 			width: auto !important;
 			padding-left: 12px !important;
-			padding-right: 10px !important;
+			padding-right: 8px !important;
 		}
 		body[data-outlook-cycle] .article-copy {
 			font-size: 22px !important;
@@ -268,22 +259,18 @@
 			line-height: 34px !important;
 		}
 		body[data-outlook-cycle] .rotate-text {
-			font-size: 24px !important;
-			line-height: 29px !important;
+			font-size: 22px !important;
+			line-height: 27px !important;
 		}
 		body[data-outlook-cycle] .action-heading,
 		body[data-outlook-cycle] .article-action,
 		body[data-outlook-cycle] .action-table {
-			width: 50px !important;
-			min-width: 50px !important;
-		}
-		body[data-outlook-cycle] .article-action img {
-			width:38px !important;
-			height:38px !important;
+			width: 32px !important;
+			min-width: 32px !important;
 		}
 		body[data-outlook-cycle] .gutter-cell {
-			width: 6px !important;
-			min-width: 6px !important;
+			width: 4px !important;
+			min-width: 4px !important;
 		}
 		body[data-outlook-cycle] .action-label,
 		body[data-outlook-cycle] .nomob {
@@ -313,7 +300,6 @@
 		.article-copy {width:564px !important; font-size:12px !important; line-height:19px !important; padding-left:20px !important; padding-right:20px !important;}
 		.article-title {font-size:16px !important; line-height:19px !important;}
 		.action-heading, .article-action, .action-table {width:108px !important; min-width:108px !important;}
-		.article-action img {width:25px !important; height:25px !important;}
 		.action-label {display:table-cell !important; width:83px !important; font-size:12px !important;}
 		.gutter-cell {width:12px !important; min-width:12px !important;}
 		.nomob {display:inline-block !important;}
@@ -337,19 +323,22 @@
 					<!--[if mso]>
 					<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="740"><tr><td>
 					<![endif]-->
-					<table role="presentation" class="main-section" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; width:100%;"><tr><td class="main-section" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;color:#333333;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;width:100%; overflow-wrap:break-word; word-wrap:break-word;" width="100%">
+					<table role="presentation" class="main-section" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; width:100%; max-width:740px;"><tr><td class="main-section" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;color:#333333;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;width:100%; max-width:740px; overflow-wrap:break-word; word-wrap:break-word;" width="100%">
 					<!--[if mso]>
 					<img alt="POELLATH Weekly, Kalenderwoche 33" src="https://www.pplaw.com/sites/default/files/2023-08/weekly-header-kw33.png" style="display:block; width:740px; height:143px; -ms-interpolation-mode:bicubic;" width="740" height="143" border="0"/>
 					<![endif]-->
 					<!--[if !mso]><!-->
-					<img class="w100pc mobile-header responsive-header" alt="POELLATH Weekly, Kalenderwoche 33" src="https://www.pplaw.com/sites/default/files/2024-04/weekly-header-mobil-kw33.png" style="display:block; width:100%; height:auto; max-height:none; overflow:visible; -ms-interpolation-mode:bicubic;" width="100%" border="0"/>
+					<img class="w100pc desktop-header" alt="POELLATH Weekly, Kalenderwoche 33" src="https://www.pplaw.com/sites/default/files/2023-08/weekly-header-kw33.png" style="display:none; width:100%; max-width:740px; height:auto; max-height:0; overflow:hidden;" width="740" height="143" border="0"/>
 					<!--<![endif]-->
-					<table role="presentation" class="content-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; width:100%; table-layout:fixed;">
+					<!--[if !mso]><!-->
+					<img class="w100pc mobile-header" alt="POELLATH Weekly, Kalenderwoche 33" src="https://www.pplaw.com/sites/default/files/2024-04/weekly-header-mobil-kw33.png" style="display:block; width:100%; max-width:740px; height:auto; max-height:none; overflow:visible; -ms-interpolation-mode:bicubic;" width="740" height="143" border="0"/>
+					<!--<![endif]-->
+					<table role="presentation" class="content-table" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse; width:100%; max-width:740px; table-layout:fixed;">
 
 						<!--Start category-->
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
-							<th class="category-cell" style="background-color: #417764; width: 44px; height: 135px !important; vertical-align: middle; text-align: center;" width="44" rowspan="3">
+							<th class="category-cell" style="background-color: #417764; width: 40px; height: 135px !important; vertical-align: middle; text-align: center;" width="40" rowspan="3">
 								<!--[if mso]>
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
@@ -366,51 +355,30 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:24px;font-weight:bold;">SPECIAL</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#ffffff;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">SPECIAL</span></div>
 
 								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width:auto; line-height: 0px;">&nbsp;</th>
-							<!--[if mso]><th class="action-heading" width="108" style="width:108px; line-height:0;">&nbsp;</th><![endif]-->
-							<!--[if !mso]><!--><th class="action-heading" width="50" style="width:50px; line-height:0;">&nbsp;</th><!--<![endif]-->
+							<th class="action-heading" style="width:32px; line-height: 0px;">&nbsp;</th>
 							<!--Grey space without content on the right side-->
-							<th class="gutter-cell" width="6" rowspan="3" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
+							<th class="gutter-cell" width="4" rowspan="3" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
 						</tr>
 
 						<!--Start article-->
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:19px; font-weight:bold; padding-top:15px; padding-left:20px; padding-right:20px; padding-bottom:5px; width:564px; vertical-align:bottom;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 10px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 8px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
 								Neuer Signatur&#8209;Generator
 							</td>
 						</tr>
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy article-title" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:19px; padding-left:20px; padding-right:20px; padding-bottom:20px; width:564px; vertical-align:top;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 10px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 8px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
 								<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=12&pid=moid&objectid=457&gs_input=signat" target="_blank" style="color:#333333; text-decoration:none !important; text-underline:none !important; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 									<span class="nounder" style="text-decoration:none !important; text-decoration-line:none !important; text-decoration-color:transparent !important; text-underline:none !important; border-bottom:0 !important;">E&#8209;Mail&#8209;Signaturen jetzt mit wenigen Klicks erstellen</span>
 								</a>
 							</td>
-							<!--[if mso]>
-							<td class="article-action" width="108" style="width:108px; min-width:108px; vertical-align:top; line-height:5px;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="article-action" width="50" style="width:50px; min-width:50px; vertical-align:top; line-height:5px;">
-							<!--<![endif]-->
-								<!--[if mso]>
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="108" style="border-collapse:collapse; width:108px; table-layout:fixed;">
-								<![endif]-->
-								<!--[if !mso]><!-->
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="50" style="border-collapse:collapse; width:50px; table-layout:fixed;">
-								<!--<![endif]-->
+							<td class="article-action" style="width:32px; min-width:32px; vertical-align: top; line-height: 5px;">
+								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="32" style="border-collapse:collapse; width:32px; table-layout:fixed;">
 									<tr>
 										<!--[if mso]>
 										<td width="25" height="25" valign="middle">
@@ -419,16 +387,10 @@
 										<td style="width:38px; min-width:38px; max-width:38px; height:38px; line-height:0; padding:0; vertical-align:middle;">
 										<!--<![endif]-->
 											<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=12&pid=moid&objectid=457&gs_input=signat" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
-												<!--[if mso]>
-												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="display:block; color:#333333; width:25px; height:25px; -ms-interpolation-mode:bicubic; border:0;" width="25" height="25"/>
-												<![endif]-->
-												<!--[if !mso]><!-->
-												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="display:block; color:#333333; width:38px; height:38px; -ms-interpolation-mode:bicubic; border:0;" width="38" height="38"/>
-												<!--<![endif]-->
+												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="color:#333333; -ms-interpolation-mode:bicubic; border: 0; vertical-align:top;" width="25" height="25"/>
 											</a>
 										</td>
-										<!--[if mso]>
-										<td class="action-label" width="83" style="display:table-cell; font-size:12px; width:83px; white-space:nowrap;">
+										<td class="action-label" width="0" style="display:none; font-size:0; width:0; white-space:nowrap;">
 										<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=12&pid=moid&objectid=457&gs_input=signat" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 												<span class="nomob" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:12px;font-weight: bold; text-align: left; vertical-align:middle !important; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 													<nobr>&nbsp;&nbsp;zum&nbsp;Beitrag</nobr>
@@ -451,7 +413,7 @@
 						<!--Start category-->
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
-							<th class="category-cell" style="background-color: #f1f1f1; width: 44px; height: 135px !important; vertical-align: middle; text-align: center;" width="44" rowspan="7">
+							<th class="category-cell" style="background-color: #f1f1f1; width: 40px; height: 135px !important; vertical-align: middle; text-align: center;" width="40" rowspan="7">
 								<!--[if mso]>
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
@@ -468,51 +430,30 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:24px;font-weight:bold;">UPDATES</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">UPDATES</span></div>
 
 								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width:auto; line-height: 0px;">&nbsp;</th>
-							<!--[if mso]><th class="action-heading" width="108" style="width:108px; line-height:0;">&nbsp;</th><![endif]-->
-							<!--[if !mso]><!--><th class="action-heading" width="50" style="width:50px; line-height:0;">&nbsp;</th><!--<![endif]-->
+							<th class="action-heading" style="width:32px; line-height: 0px;">&nbsp;</th>
 							<!--Grey space without content on the right side-->
-							<th class="gutter-cell" width="6" rowspan="7" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
+							<th class="gutter-cell" width="4" rowspan="7" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
 						</tr>
 
 						<!--Start article-->
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:19px; font-weight:bold; padding-top:5px; padding-left:20px; padding-right:20px; padding-bottom:5px; width:564px; vertical-align:bottom;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 5px; padding-left: 12px; padding-right: 10px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 5px; padding-left: 12px; padding-right: 8px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
 								&Uuml;bersicht
 							</td>
 						</tr>
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy article-title" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:19px; padding-left:20px; padding-right:20px; padding-bottom:0px; width:564px; vertical-align:top;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 10px;padding-bottom: 0px; width:auto; vertical-align: top;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 8px;padding-bottom: 0px; width:auto; vertical-align: top;">
 								<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=12&pid=moid&objectid=723" target="_blank" style="color:#333333; text-decoration:none !important; text-underline:none !important; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 									<span class="nounder" style="text-decoration:none !important; text-decoration-line:none !important; text-decoration-color:transparent !important; text-underline:none !important; border-bottom:0 !important;">Neue Mandate der Woche (aktuelle Ausgabe)</span>
 								</a>
 							</td>
-							<!--[if mso]>
-							<td class="article-action" width="108" style="width:108px; min-width:108px; vertical-align:top; line-height:5px;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="article-action" width="50" style="width:50px; min-width:50px; vertical-align:top; line-height:5px;">
-							<!--<![endif]-->
-								<!--[if mso]>
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="108" style="border-collapse:collapse; width:108px; table-layout:fixed;">
-								<![endif]-->
-								<!--[if !mso]><!-->
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="50" style="border-collapse:collapse; width:50px; table-layout:fixed;">
-								<!--<![endif]-->
+							<td class="article-action" style="width:32px; min-width:32px; vertical-align: top; line-height: 5px;">
+								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="32" style="border-collapse:collapse; width:32px; table-layout:fixed;">
 									<tr>
 										<!--[if mso]>
 										<td width="25" height="25" valign="middle">
@@ -521,16 +462,10 @@
 										<td style="width:38px; min-width:38px; max-width:38px; height:38px; line-height:0; padding:0; vertical-align:middle;">
 										<!--<![endif]-->
 											<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=12&pid=moid&objectid=723" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
-												<!--[if mso]>
-												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="display:block; color:#333333; width:25px; height:25px; -ms-interpolation-mode:bicubic; border:0;" width="25" height="25"/>
-												<![endif]-->
-												<!--[if !mso]><!-->
-												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="display:block; color:#333333; width:38px; height:38px; -ms-interpolation-mode:bicubic; border:0;" width="38" height="38"/>
-												<!--<![endif]-->
+												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="color:#333333; -ms-interpolation-mode:bicubic; border: 0; vertical-align:top;" width="25" height="25"/>
 											</a>
 										</td>
-										<!--[if mso]>
-										<td class="action-label" width="83" style="display:table-cell; font-size:12px; width:83px; white-space:nowrap;">
+										<td class="action-label" width="0" style="display:none; font-size:0; width:0; white-space:nowrap;">
 										<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=12&pid=moid&objectid=724" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 												<span class="nomob" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:12px;font-weight: bold; text-align: left; vertical-align:middle !important; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 													<nobr>&nbsp;&nbsp;zum&nbsp;Archiv</nobr>
@@ -545,38 +480,18 @@
 						<!--End article-->
 						<!--Start article-->
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:19px; font-weight:bold; padding-top:5px; padding-left:20px; padding-right:20px; padding-bottom:5px; width:564px; vertical-align:bottom;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 5px; padding-left: 12px; padding-right: 10px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 5px; padding-left: 12px; padding-right: 8px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
 								&Uuml;bersicht
 							</td>
 						</tr>
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy article-title" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:19px; padding-left:20px; padding-right:20px; padding-bottom:0px; width:564px; vertical-align:top;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 10px;padding-bottom: 0px; width:auto; vertical-align: top;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 8px;padding-bottom: 0px; width:auto; vertical-align: top;">
 								<a href="http://ber-intra-01.int.pplaw.de:8068/Inhaltsverzeichnisse/InhaltsV_Aktuell.pdf" target="_blank" style="color:#333333; text-decoration:none !important; text-underline:none !important; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 									<span class="nounder" style="text-decoration:none !important; text-decoration-line:none !important; text-decoration-color:transparent !important; text-underline:none !important; border-bottom:0 !important;">Zeitschriftenspiegel (aktuelle Ausgabe)</span>
 								</a>
 							</td>
-							<!--[if mso]>
-							<td class="article-action" width="108" style="width:108px; min-width:108px; vertical-align:top; line-height:5px;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="article-action" width="50" style="width:50px; min-width:50px; vertical-align:top; line-height:5px;">
-							<!--<![endif]-->
-								<!--[if mso]>
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="108" style="border-collapse:collapse; width:108px; table-layout:fixed;">
-								<![endif]-->
-								<!--[if !mso]><!-->
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="50" style="border-collapse:collapse; width:50px; table-layout:fixed;">
-								<!--<![endif]-->
+							<td class="article-action" style="width:32px; min-width:32px; vertical-align: top; line-height: 5px;">
+								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="32" style="border-collapse:collapse; width:32px; table-layout:fixed;">
 									<tr>
 										<!--[if mso]>
 										<td width="25" height="25" valign="middle">
@@ -585,16 +500,10 @@
 										<td style="width:38px; min-width:38px; max-width:38px; height:38px; line-height:0; padding:0; vertical-align:middle;">
 										<!--<![endif]-->
 											<a href="http://ber-intra-01.int.pplaw.de:8068/Inhaltsverzeichnisse/InhaltsV_Aktuell.pdf" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
-												<!--[if mso]>
-												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="display:block; color:#333333; width:25px; height:25px; -ms-interpolation-mode:bicubic; border:0;" width="25" height="25"/>
-												<![endif]-->
-												<!--[if !mso]><!-->
-												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="display:block; color:#333333; width:38px; height:38px; -ms-interpolation-mode:bicubic; border:0;" width="38" height="38"/>
-												<!--<![endif]-->
+												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="color:#333333; -ms-interpolation-mode:bicubic; border: 0; vertical-align:top;" width="25" height="25"/>
 											</a>
 										</td>
-										<!--[if mso]>
-										<td class="action-label" width="83" style="display:table-cell; font-size:12px; width:83px; white-space:nowrap;">
+										<td class="action-label" width="0" style="display:none; font-size:0; width:0; white-space:nowrap;">
 										<a href="http://ber-intra-01.int.pplaw.de:8068/Inhaltsverzeichnisse/indexer.php?dir=2026" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 												<span class="nomob" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:12px;font-weight: bold; text-align: left; vertical-align:middle !important; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 													<nobr>&nbsp;&nbsp;zum&nbsp;Archiv</nobr>
@@ -609,38 +518,18 @@
 						<!--End article-->
 						<!--Start article-->
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:19px; font-weight:bold; padding-top:15px; padding-left:20px; padding-right:20px; padding-bottom:5px; width:564px; vertical-align:bottom;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 10px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 8px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
 								Newsletter Bibliothek
 							</td>
 						</tr>
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy article-title" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:19px; padding-left:20px; padding-right:20px; padding-bottom:20px; width:564px; vertical-align:top;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 10px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 8px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
 								<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=11&pid=moid&objectid=19" target="_blank" style="color:#333333; text-decoration:none !important; text-underline:none !important; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 									<span class="nounder" style="text-decoration:none !important; text-decoration-line:none !important; text-decoration-color:transparent !important; text-underline:none !important; border-bottom:0 !important;">Alle Infos und Neuerungen fortlaufend im &Uuml;berblick.</span>
 								</a>
 							</td>
-							<!--[if mso]>
-							<td class="article-action" width="108" style="width:108px; min-width:108px; vertical-align:top; line-height:5px;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="article-action" width="50" style="width:50px; min-width:50px; vertical-align:top; line-height:5px;">
-							<!--<![endif]-->
-								<!--[if mso]>
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="108" style="border-collapse:collapse; width:108px; table-layout:fixed;">
-								<![endif]-->
-								<!--[if !mso]><!-->
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="50" style="border-collapse:collapse; width:50px; table-layout:fixed;">
-								<!--<![endif]-->
+							<td class="article-action" style="width:32px; min-width:32px; vertical-align: top; line-height: 5px;">
+								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="32" style="border-collapse:collapse; width:32px; table-layout:fixed;">
 									<tr>
 										<!--[if mso]>
 										<td width="25" height="25" valign="middle">
@@ -649,16 +538,10 @@
 										<td style="width:38px; min-width:38px; max-width:38px; height:38px; line-height:0; padding:0; vertical-align:middle;">
 										<!--<![endif]-->
 											<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=11&pid=moid&objectid=19" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
-												<!--[if mso]>
-												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="display:block; color:#333333; width:25px; height:25px; -ms-interpolation-mode:bicubic; border:0;" width="25" height="25"/>
-												<![endif]-->
-												<!--[if !mso]><!-->
-												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="display:block; color:#333333; width:38px; height:38px; -ms-interpolation-mode:bicubic; border:0;" width="38" height="38"/>
-												<!--<![endif]-->
+												<img src="https://www.pplaw.com/sites/default/files/2023-10/DAILY_25px.png" alt="Link" style="color:#333333; -ms-interpolation-mode:bicubic; border: 0; vertical-align:top;" width="25" height="25"/>
 											</a>
 										</td>
-										<!--[if mso]>
-										<td class="action-label" width="83" style="display:table-cell; font-size:12px; width:83px; white-space:nowrap;">
+										<td class="action-label" width="0" style="display:none; font-size:0; width:0; white-space:nowrap;">
 										<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=11&pid=moid&objectid=19" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 												<span class="nomob" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:12px;font-weight: bold; text-align: left; vertical-align:middle !important; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 													<nobr>&nbsp;&nbsp;zum&nbsp;Beitrag</nobr>
@@ -681,7 +564,7 @@
 						<!--Start category-->
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
-							<th class="category-cell" style="background-color: #f1f1f1; width: 44px; height: 135px !important; vertical-align: middle; text-align: center;" width="44" rowspan="5">
+							<th class="category-cell" style="background-color: #f1f1f1; width: 40px; height: 135px !important; vertical-align: middle; text-align: center;" width="40" rowspan="5">
 								<!--[if mso]>
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
@@ -698,51 +581,30 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:24px;font-weight:bold;">RANKINGS</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">RANKINGS</span></div>
 
 								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width:auto; line-height: 0px;">&nbsp;</th>
-							<!--[if mso]><th class="action-heading" width="108" style="width:108px; line-height:0;">&nbsp;</th><![endif]-->
-							<!--[if !mso]><!--><th class="action-heading" width="50" style="width:50px; line-height:0;">&nbsp;</th><!--<![endif]-->
+							<th class="action-heading" style="width:32px; line-height: 0px;">&nbsp;</th>
 							<!--Grey space without content on the right side-->
-							<th class="gutter-cell" width="6" rowspan="5" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
+							<th class="gutter-cell" width="4" rowspan="5" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
 						</tr>
 
 						<!--Start article-->
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:19px; font-weight:bold; padding-top:5px; padding-left:20px; padding-right:20px; padding-bottom:5px; width:564px; vertical-align:bottom;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 5px; padding-left: 12px; padding-right: 10px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 5px; padding-left: 12px; padding-right: 8px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
 								JUVE&#8209;Ranking Gesellschaftsrecht
 							</td>
 						</tr>
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy article-title" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:19px; padding-left:20px; padding-right:20px; padding-bottom:0px; width:564px; vertical-align:top;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 10px;padding-bottom: 0px; width:auto; vertical-align: top;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 8px;padding-bottom: 0px; width:auto; vertical-align: top;">
 								<a href="https://ber-intra-01.int.pplaw.de/index.php?kc=3&pid=moid&objectid=508" target="_blank" style="color:#333333; text-decoration:none !important; text-underline:none !important; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 									<span class="nounder" style="text-decoration:none !important; text-decoration-line:none !important; text-decoration-color:transparent !important; text-underline:none !important; border-bottom:0 !important;">Hervorhebung unserer Corporate&#8209;Expertise in Schl&uuml;sselthemen</span>
 								</a>
 							</td>
-							<!--[if mso]>
-							<td class="article-action" width="108" style="width:108px; min-width:108px; vertical-align:top; line-height:5px;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="article-action" width="50" style="width:50px; min-width:50px; vertical-align:top; line-height:5px;">
-							<!--<![endif]-->
-								<!--[if mso]>
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="108" style="border-collapse:collapse; width:108px; table-layout:fixed;">
-								<![endif]-->
-								<!--[if !mso]><!-->
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="50" style="border-collapse:collapse; width:50px; table-layout:fixed;">
-								<!--<![endif]-->
+							<td class="article-action" style="width:32px; min-width:32px; vertical-align: top; line-height: 5px;">
+								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="32" style="border-collapse:collapse; width:32px; table-layout:fixed;">
 									<tr>
 										<!--[if mso]>
 										<td width="25" height="25" valign="middle">
@@ -751,16 +613,10 @@
 										<td style="width:38px; min-width:38px; max-width:38px; height:38px; line-height:0; padding:0; vertical-align:middle;">
 										<!--<![endif]-->
 											<a href="https://www.linkedin.com/feed/update/urn:li:activity:7492873079400857600" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
-												<!--[if mso]>
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:25px; height:25px; -ms-interpolation-mode:bicubic; border:0;" width="25" height="25"/>
-												<![endif]-->
-												<!--[if !mso]><!-->
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:38px; height:38px; -ms-interpolation-mode:bicubic; border:0;" width="38" height="38"/>
-												<!--<![endif]-->
+												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="color:#333333; -ms-interpolation-mode:bicubic; border: 0; vertical-align:top;" width="25" height="25"/>
 											</a>
 										</td>
-										<!--[if mso]>
-										<td class="action-label" width="83" style="display:table-cell; font-size:12px; width:83px; white-space:nowrap;">
+										<td class="action-label" width="0" style="display:none; font-size:0; width:0; white-space:nowrap;">
 										<a href="https://www.linkedin.com/feed/update/urn:li:activity:7492873079400857600" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 												<span class="nomob" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:12px;font-weight: bold; text-align: left; vertical-align:middle !important; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 													<nobr>&nbsp;&nbsp;zum&nbsp;Post</nobr>
@@ -775,38 +631,18 @@
 						<!--End article-->
 						<!--Start article-->
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:19px; font-weight:bold; padding-top:15px; padding-left:20px; padding-right:20px; padding-bottom:5px; width:564px; vertical-align:bottom;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 10px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 8px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
 								POELLATH @Lexology Index
 							</td>
 						</tr>
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy article-title" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:19px; padding-left:20px; padding-right:20px; padding-bottom:20px; width:564px; vertical-align:top;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 10px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 8px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
 								<a href="https://www.linkedin.com/feed/update/urn:li:activity:7493332122913366017" target="_blank" style="color:#333333; text-decoration:none !important; text-underline:none !important; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 									<span class="nounder" style="text-decoration:none !important; text-decoration-line:none !important; text-decoration-color:transparent !important; text-underline:none !important; border-bottom:0 !important;">Internationale Anerkennung f&uuml;r unsere Real Estate&#8209;Praxis</span>
 								</a>
 							</td>
-							<!--[if mso]>
-							<td class="article-action" width="108" style="width:108px; min-width:108px; vertical-align:top; line-height:5px;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="article-action" width="50" style="width:50px; min-width:50px; vertical-align:top; line-height:5px;">
-							<!--<![endif]-->
-								<!--[if mso]>
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="108" style="border-collapse:collapse; width:108px; table-layout:fixed;">
-								<![endif]-->
-								<!--[if !mso]><!-->
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="50" style="border-collapse:collapse; width:50px; table-layout:fixed;">
-								<!--<![endif]-->
+							<td class="article-action" style="width:32px; min-width:32px; vertical-align: top; line-height: 5px;">
+								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="32" style="border-collapse:collapse; width:32px; table-layout:fixed;">
 									<tr>
 										<!--[if mso]>
 										<td width="25" height="25" valign="middle">
@@ -815,16 +651,10 @@
 										<td style="width:38px; min-width:38px; max-width:38px; height:38px; line-height:0; padding:0; vertical-align:middle;">
 										<!--<![endif]-->
 											<a href="https://www.linkedin.com/feed/update/urn:li:activity:7493332122913366017" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
-												<!--[if mso]>
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:25px; height:25px; -ms-interpolation-mode:bicubic; border:0;" width="25" height="25"/>
-												<![endif]-->
-												<!--[if !mso]><!-->
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:38px; height:38px; -ms-interpolation-mode:bicubic; border:0;" width="38" height="38"/>
-												<!--<![endif]-->
+												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="color:#333333; -ms-interpolation-mode:bicubic; border: 0; vertical-align:top;" width="25" height="25"/>
 											</a>
 										</td>
-										<!--[if mso]>
-										<td class="action-label" width="83" style="display:table-cell; font-size:12px; width:83px; white-space:nowrap;">
+										<td class="action-label" width="0" style="display:none; font-size:0; width:0; white-space:nowrap;">
 										<a href="https://www.linkedin.com/feed/update/urn:li:activity:7493332122913366017" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 												<span class="nomob" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:12px;font-weight: bold; text-align: left; vertical-align:middle !important; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 													<nobr>&nbsp;&nbsp;zum&nbsp;Post</nobr>
@@ -847,7 +677,7 @@
 						<!--Start category-->
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
-							<th class="category-cell" style="background-color: #f1f1f1; width: 44px; height: 135px !important; vertical-align: middle; text-align: center;" width="44" rowspan="3">
+							<th class="category-cell" style="background-color: #f1f1f1; width: 40px; height: 135px !important; vertical-align: middle; text-align: center;" width="40" rowspan="3">
 								<!--[if mso]>
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
@@ -864,51 +694,30 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:24px;font-weight:bold;">DEALS</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">DEALS</span></div>
 
 								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width:auto; line-height: 0px;">&nbsp;</th>
-							<!--[if mso]><th class="action-heading" width="108" style="width:108px; line-height:0;">&nbsp;</th><![endif]-->
-							<!--[if !mso]><!--><th class="action-heading" width="50" style="width:50px; line-height:0;">&nbsp;</th><!--<![endif]-->
+							<th class="action-heading" style="width:32px; line-height: 0px;">&nbsp;</th>
 							<!--Grey space without content on the right side-->
-							<th class="gutter-cell" width="6" rowspan="3" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
+							<th class="gutter-cell" width="4" rowspan="3" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
 						</tr>
 
 						<!--Start article-->
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:19px; font-weight:bold; padding-top:15px; padding-left:20px; padding-right:20px; padding-bottom:5px; width:564px; vertical-align:bottom;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 10px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 8px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
 								TDe &#8209; MBE &#8209; MGr
 							</td>
 						</tr>
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy article-title" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:19px; padding-left:20px; padding-right:20px; padding-bottom:20px; width:564px; vertical-align:top;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 10px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 8px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
 								<a href="https://www.pplaw.com/sites/default/files/2026-08/260812%20POELLATH%20bera%CC%88t%20DPE%20beim%20Erwerb%20einer%20Mehrheitsbeteiligung%20an%20der%20FOGTEC%20Gruppe.pdf" target="_blank" style="color:#333333; text-decoration:none !important; text-underline:none !important; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 									<span class="nounder" style="text-decoration:none !important; text-decoration-line:none !important; text-decoration-color:transparent !important; text-underline:none !important; border-bottom:0 !important;">POELLATH ber&auml;t DPE beim Erwerb einer Mehrheitsbeteiligung an der FOGTEC Gruppe</span>
 								</a>
 							</td>
-							<!--[if mso]>
-							<td class="article-action" width="108" style="width:108px; min-width:108px; vertical-align:top; line-height:5px;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="article-action" width="50" style="width:50px; min-width:50px; vertical-align:top; line-height:5px;">
-							<!--<![endif]-->
-								<!--[if mso]>
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="108" style="border-collapse:collapse; width:108px; table-layout:fixed;">
-								<![endif]-->
-								<!--[if !mso]><!-->
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="50" style="border-collapse:collapse; width:50px; table-layout:fixed;">
-								<!--<![endif]-->
+							<td class="article-action" style="width:32px; min-width:32px; vertical-align: top; line-height: 5px;">
+								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="32" style="border-collapse:collapse; width:32px; table-layout:fixed;">
 									<tr>
 										<!--[if mso]>
 										<td width="25" height="25" valign="middle">
@@ -917,16 +726,10 @@
 										<td style="width:38px; min-width:38px; max-width:38px; height:38px; line-height:0; padding:0; vertical-align:middle;">
 										<!--<![endif]-->
 											<a href="https://www.linkedin.com/feed/update/urn:li:activity:7493266863855038464" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
-												<!--[if mso]>
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:25px; height:25px; -ms-interpolation-mode:bicubic; border:0;" width="25" height="25"/>
-												<![endif]-->
-												<!--[if !mso]><!-->
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:38px; height:38px; -ms-interpolation-mode:bicubic; border:0;" width="38" height="38"/>
-												<!--<![endif]-->
+												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="color:#333333; -ms-interpolation-mode:bicubic; border: 0; vertical-align:top;" width="25" height="25"/>
 											</a>
 										</td>
-										<!--[if mso]>
-										<td class="action-label" width="83" style="display:table-cell; font-size:12px; width:83px; white-space:nowrap;">
+										<td class="action-label" width="0" style="display:none; font-size:0; width:0; white-space:nowrap;">
 										<a href="https://www.linkedin.com/feed/update/urn:li:activity:7493266863855038464" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 												<span class="nomob" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:12px;font-weight: bold; text-align: left; vertical-align:middle !important; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 													<nobr>&nbsp;&nbsp;zum&nbsp;Post</nobr>
@@ -949,7 +752,7 @@
 						<!--Start category-->
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
-							<th class="category-cell" style="background-color: #f1f1f1; width: 44px; height: 135px !important; vertical-align: middle; text-align: center;" width="44" rowspan="3">
+							<th class="category-cell" style="background-color: #f1f1f1; width: 40px; height: 135px !important; vertical-align: middle; text-align: center;" width="40" rowspan="3">
 								<!--[if mso]>
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
@@ -966,51 +769,30 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:24px;font-weight:bold;">EVENTS</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">EVENTS</span></div>
 
 								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width:auto; line-height: 0px;">&nbsp;</th>
-							<!--[if mso]><th class="action-heading" width="108" style="width:108px; line-height:0;">&nbsp;</th><![endif]-->
-							<!--[if !mso]><!--><th class="action-heading" width="50" style="width:50px; line-height:0;">&nbsp;</th><!--<![endif]-->
+							<th class="action-heading" style="width:32px; line-height: 0px;">&nbsp;</th>
 							<!--Grey space without content on the right side-->
-							<th class="gutter-cell" width="6" rowspan="3" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
+							<th class="gutter-cell" width="4" rowspan="3" style="background-color: #f1f1f1; line-height: 135px;">&nbsp;</th>
 						</tr>
 
 						<!--Start article-->
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:19px; font-weight:bold; padding-top:15px; padding-left:20px; padding-right:20px; padding-bottom:5px; width:564px; vertical-align:bottom;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 10px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 8px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
 								16. Hamburger Fondsgespr&auml;ch (11. November), Hotel Hafen Hamburg
 							</td>
 						</tr>
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy article-title" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:19px; padding-left:20px; padding-right:20px; padding-bottom:20px; width:564px; vertical-align:top;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 10px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 8px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
 								<a href="https://www.pptraining.de/hamburger-fondsgespraeche" target="_blank" style="color:#333333; text-decoration:none !important; text-underline:none !important; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 									<span class="nounder" style="text-decoration:none !important; text-decoration-line:none !important; text-decoration-color:transparent !important; text-underline:none !important; border-bottom:0 !important;">Im Fokus u.a.: Steuerreformen 2026, Fund Finance, KI in der Fondswelt &#8209; LinkedIn&#8209;Event gerne liken oder reposten</span>
 								</a>
 							</td>
-							<!--[if mso]>
-							<td class="article-action" width="108" style="width:108px; min-width:108px; vertical-align:top; line-height:5px;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="article-action" width="50" style="width:50px; min-width:50px; vertical-align:top; line-height:5px;">
-							<!--<![endif]-->
-								<!--[if mso]>
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="108" style="border-collapse:collapse; width:108px; table-layout:fixed;">
-								<![endif]-->
-								<!--[if !mso]><!-->
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="50" style="border-collapse:collapse; width:50px; table-layout:fixed;">
-								<!--<![endif]-->
+							<td class="article-action" style="width:32px; min-width:32px; vertical-align: top; line-height: 5px;">
+								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="32" style="border-collapse:collapse; width:32px; table-layout:fixed;">
 									<tr>
 										<!--[if mso]>
 										<td width="25" height="25" valign="middle">
@@ -1019,16 +801,10 @@
 										<td style="width:38px; min-width:38px; max-width:38px; height:38px; line-height:0; padding:0; vertical-align:middle;">
 										<!--<![endif]-->
 											<a href="https://www.linkedin.com/feed/update/urn:li:activity:7493937587552800768" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
-												<!--[if mso]>
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:25px; height:25px; -ms-interpolation-mode:bicubic; border:0;" width="25" height="25"/>
-												<![endif]-->
-												<!--[if !mso]><!-->
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:38px; height:38px; -ms-interpolation-mode:bicubic; border:0;" width="38" height="38"/>
-												<!--<![endif]-->
+												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="color:#333333; -ms-interpolation-mode:bicubic; border: 0; vertical-align:top;" width="25" height="25"/>
 											</a>
 										</td>
-										<!--[if mso]>
-										<td class="action-label" width="83" style="display:table-cell; font-size:12px; width:83px; white-space:nowrap;">
+										<td class="action-label" width="0" style="display:none; font-size:0; width:0; white-space:nowrap;">
 										<a href="https://www.linkedin.com/feed/update/urn:li:activity:7493937587552800768" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 												<span class="nomob" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:12px;font-weight: bold; text-align: left; vertical-align:middle !important; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 													<nobr>&nbsp;&nbsp;zum&nbsp;Post</nobr>
@@ -1051,7 +827,7 @@
 						<!--Start category-->
 						<tr>
 							<!--Three articles rowspan: 7. Two articles rowspan: 5. For one article rowspan: 3-->
-							<th class="category-cell" style="background-color: #f1f1f1; width: 44px; height: 135px !important; vertical-align: middle; text-align: center; border-bottom: 2px solid #f1f1f1;" width="44" rowspan="3">
+							<th class="category-cell" style="background-color: #f1f1f1; width: 40px; height: 135px !important; vertical-align: middle; text-align: center; border-bottom: 2px solid #f1f1f1;" width="40" rowspan="3">
 								<!--[if mso]>
 
 								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="56" align="center" style="width:56px; border-collapse:collapse;"><tr>
@@ -1068,51 +844,30 @@
 
 								<!--[if !mso]><!-->
 
-								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:24px;font-weight:bold;">PE&#8209;MAGAZIN</span></div>
+								<div class="category-label"><span class="rotate-text" style="color:#434F69;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:18px;font-weight:bold;">PE&#8209;MAGAZIN</span></div>
 
 								<!--<![endif]-->
 							</th>
 							<th class="copy-heading" style="width:auto; line-height: 0px;">&nbsp;</th>
-							<!--[if mso]><th class="action-heading" width="108" style="width:108px; line-height:0;">&nbsp;</th><![endif]-->
-							<!--[if !mso]><!--><th class="action-heading" width="50" style="width:50px; line-height:0;">&nbsp;</th><!--<![endif]-->
+							<th class="action-heading" style="width:32px; line-height: 0px;">&nbsp;</th>
 							<!--Grey space without content on the right side-->
-							<th class="gutter-cell" width="6" rowspan="3" style="background-color: #f1f1f1; line-height: 135px; border-bottom: 2px solid #f1f1f1;">&nbsp;</th>
+							<th class="gutter-cell" width="4" rowspan="3" style="background-color: #f1f1f1; line-height: 135px; border-bottom: 2px solid #f1f1f1;">&nbsp;</th>
 						</tr>
 
 						<!--Start article-->
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:19px; font-weight:bold; padding-top:15px; padding-left:20px; padding-right:20px; padding-bottom:5px; width:564px; vertical-align:bottom;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 10px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:22px;line-height:30px;font-weight: bold; padding-top: 15px; padding-left: 12px; padding-right: 8px; padding-bottom: 5px; width:auto; vertical-align: bottom;">
 								PE Talk: RE im Gespr&auml;ch mit Petr Poldauf (Schroders Capital)
 							</td>
 						</tr>
 						<tr>
-							<!--[if mso]>
-							<td class="hyphenate article-copy article-title" lang="de" width="564" style="color:#333333; font-family:Helvetica, Arial, sans-serif; font-size:16px; line-height:19px; padding-left:20px; padding-right:20px; padding-bottom:20px; width:564px; vertical-align:top;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 10px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
-							<!--<![endif]-->
+							<td class="hyphenate article-copy article-title" lang="de" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:26px;line-height:34px;padding-left: 12px; padding-right: 8px;padding-bottom: 20px; width:auto; vertical-align: top; align: left">
 								<a href="https://www.pe-magazin.de/continuation-funds-wachstum-governance-und-marktmechanik-im-fokus/?utm_source=socialmedia&utm_medium=linkedin&utm_campaign=de" target="_blank" style="color:#333333; text-decoration:none !important; text-underline:none !important; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 									<span class="nounder" style="text-decoration:none !important; text-decoration-line:none !important; text-decoration-color:transparent !important; text-underline:none !important; border-bottom:0 !important;">Im Fokus: Continuation Funds – Wachstum, Governance und Marktmechanik im Fokus</span>
 								</a>
 							</td>
-							<!--[if mso]>
-							<td class="article-action" width="108" style="width:108px; min-width:108px; vertical-align:top; line-height:5px;">
-							<![endif]-->
-							<!--[if !mso]><!-->
-							<td class="article-action" width="50" style="width:50px; min-width:50px; vertical-align:top; line-height:5px;">
-							<!--<![endif]-->
-								<!--[if mso]>
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="108" style="border-collapse:collapse; width:108px; table-layout:fixed;">
-								<![endif]-->
-								<!--[if !mso]><!-->
-								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="50" style="border-collapse:collapse; width:50px; table-layout:fixed;">
-								<!--<![endif]-->
+							<td class="article-action" style="width:32px; min-width:32px; vertical-align: top; line-height: 5px;">
+								<table role="presentation" class="action-table" border="0" cellpadding="0" cellspacing="0" width="32" style="border-collapse:collapse; width:32px; table-layout:fixed;">
 									<tr>
 										<!--[if mso]>
 										<td width="25" height="25" valign="middle">
@@ -1121,16 +876,10 @@
 										<td style="width:38px; min-width:38px; max-width:38px; height:38px; line-height:0; padding:0; vertical-align:middle;">
 										<!--<![endif]-->
 											<a href="https://www.linkedin.com/posts/pe-magazin_%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%82%F0%9D%97%B2-%F0%9D%97%99%F0%9D%97%BC%F0%9D%97%B9%F0%9D%97%B4%F0%9D%97%B2-%F0%9D%98%82%F0%9D%97%BB%F0%9D%98%80%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%BF-%F0%9D%97%A3%F0%9D%97%BC%F0%9D%97%B1%F0%9D%97%B0%F0%9D%97%AE%F0%9D%98%80%F0%9D%98%81-%F0%9D%97%A5%F0%9D%97%B2%F0%9D%97%B6%F0%9D%97%B5%F0%9D%97%B2-activity-7493593254882623489-uZTD?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmipykBYZvanRFIbn70DX72qD5schnEnTU" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
-												<!--[if mso]>
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:25px; height:25px; -ms-interpolation-mode:bicubic; border:0;" width="25" height="25"/>
-												<![endif]-->
-												<!--[if !mso]><!-->
-												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="display:block; color:#333333; width:38px; height:38px; -ms-interpolation-mode:bicubic; border:0;" width="38" height="38"/>
-												<!--<![endif]-->
+												<img src="https://www.pplaw.com/sites/default/files/2023-08/In-2C_25px.png" alt="Link" style="color:#333333; -ms-interpolation-mode:bicubic; border: 0; vertical-align:top;" width="25" height="25"/>
 											</a>
 										</td>
-										<!--[if mso]>
-										<td class="action-label" width="83" style="display:table-cell; font-size:12px; width:83px; white-space:nowrap;">
+										<td class="action-label" width="0" style="display:none; font-size:0; width:0; white-space:nowrap;">
 										<a href="https://www.linkedin.com/posts/pe-magazin_%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%82%F0%9D%97%B2-%F0%9D%97%99%F0%9D%97%BC%F0%9D%97%B9%F0%9D%97%B4%F0%9D%97%B2-%F0%9D%98%82%F0%9D%97%BB%F0%9D%98%80%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%BF-%F0%9D%97%A3%F0%9D%97%BC%F0%9D%97%B1%F0%9D%97%B0%F0%9D%97%AE%F0%9D%98%80%F0%9D%98%81-%F0%9D%97%A5%F0%9D%97%B2%F0%9D%97%B6%F0%9D%97%B5%F0%9D%97%B2-activity-7493593254882623489-uZTD?utm_source=share&utm_medium=member_desktop&rcm=ACoAACmipykBYZvanRFIbn70DX72qD5schnEnTU" style="color:#7f7f7f; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 												<span class="nomob" style="color:#333333;font-family: Helvetica, 'Helvetica Neue', 'Helvetica', Arial, sans-serif;font-size:12px;font-weight: bold; text-align: left; vertical-align:middle !important; text-decoration:none !important; text-underline:none !important; white-space:nowrap; border-bottom:0 !important; text-decoration-line:none !important; text-decoration-color:transparent !important;">
 													<nobr>&nbsp;&nbsp;zum&nbsp;Post</nobr>
