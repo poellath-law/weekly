@@ -6,7 +6,7 @@
 
 	Made by Lynn Nguyen, Patrick Brockmann
 
-	Template-Version: 1.8.0
+	Template-Version: 1.8.1
 	Stand: 2026-10-29
 	Kompatibilitaetsziele: Outlook Desktop 2606, Outlook iOS 5.2631.0
 
@@ -82,19 +82,19 @@
 			width: 56px;
 		}
 		.rotate-text {
-			direction: rtl;
+			direction: ltr;
 			display: table-cell;
 			font-weight: bold;
 			line-height: 22px;
 			position: static;
 			text-align: center;
-			text-orientation: mixed;
-			unicode-bidi: bidi-override;
+			text-orientation: sideways;
+			unicode-bidi: normal;
 			vertical-align: middle;
 			white-space: nowrap;
-			-webkit-writing-mode: vertical-rl;
-			-ms-writing-mode: tb-rl;
-			writing-mode: vertical-rl;
+			-webkit-writing-mode: sideways-lr;
+			-ms-writing-mode: bt-rl;
+			writing-mode: sideways-lr;
 		}
 
 		@media only screen and (max-width: 740px) {
